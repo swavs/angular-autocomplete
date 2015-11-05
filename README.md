@@ -29,7 +29,7 @@ UP - Move focus to the previous item. If on first item, move focus to the input.
 
 DOWN - Move focus to the next item. If on last item, move focus to the input. If on the input, move focus to the first item.
 
-ESCAPE - Close the menu and rests input.
+ESCAPE - Close the menu and resets input.
 
 ENTER - Select the currently focused item and close the menu.
 
