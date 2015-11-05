@@ -1,6 +1,7 @@
 /**
  * Angular js autocomplete directive
- * repository : https://github.com/swavs/angular-autocomplete.git
+ * author: swavs 
+ * git repository : https://github.com/swavs/angular-autocomplete.git
  */
 (function() {
   'use strict';
