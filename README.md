@@ -10,7 +10,7 @@ This plugin is similar to JQuery autocomplete plugin with similar attributes.
 You can also view the demo page here: [Autocomplete Demo](https://angular-autocomplete-demo.herokuapp.com/).
 
 #Installation and Usage
-Download the package and include the .js and .css file in your project.
+Download the package and include the .js and .css file in your project or use command "bower install angular-autocomplete-plugin"
 
 Below is an example of adding autocomplete module to your app
 
