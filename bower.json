@@ -1,0 +1,25 @@
+{
+  "name": "angular-autocomplete-plugin",
+  "version": "0.0.1",
+  "homepage": "https://github.com/swavs/angular-autocomplete",
+  "authors": [
+    "swavs <swavs@users.noreply.github.com>"
+  ],
+  "description": "Autocomplete plugin in Angular",
+  "main": ["./autocomplete.js",
+			"./autocomplete.css"],
+  "moduleType": [],
+  "keywords": [
+    "autocomplete",
+    "angular",
+    "typeahead"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
