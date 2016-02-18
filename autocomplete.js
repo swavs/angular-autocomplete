@@ -26,13 +26,14 @@
                             placeholder: '@',
                             minlength: '@',                            
                             selectHandler: '=',
-                            overrideSearch: '='
+                            overrideSearch: '=',
+                            optLblNoResults: '@'
                           },
                           template: '<div class="autocomplete-content">'
                                   + '  <input ng-model="inputString" type="text" placeholder="{{placeholder}}" ng-change="inputChangeHandler($event)" class="autocomplete-text toolbarProp" ng-blur="hideResults($event)" autocapitalize="off" autocorrect="off" autocomplete="off" />'
                                   + '  <div class="autocomplete-dropdown" ng-show="showDropdown">'
                                   + '    <div class="autocomplete-search-text" ng-show="searching" ng-bind="labelSearching"></div>'
-                                  + '    <div class="autocomplete-search-text" ng-show="noResults" ng-bind="labelNoResults"></div>'
+                                  + '    <div class="autocomplete-search-text" ng-show="noResults"  ng-bind="labelNoResults"></div>'
                                   + '    <ul class="autocomplete-list"><li class="autocomplete-row" ng-repeat="result in results" ng-click="selectResult(result, $event)" ng-mouseenter="hoverRow($index)" ng-mouseleave="hoverOut($index)" ng-class="{\'autocomplete-highlight-row\': $index == currentIndex}">'
                                   + '      <span class="autocomplete-title" ng-bind-html="result.label"></span>'
                                   + '    </li></ul>' + '</div>' + '</div>',
@@ -45,7 +46,10 @@
                             scope.noResults = false;
                             scope.resultSelect = false;
                             scope.labelSearching = 'Searching...';
-                            scope.labelNoResults = 'No results found';
+                            if (scope.optLblNoResults === undefined) 
+                              scope.labelNoResults = 'No results found';
+                            else 
+                              scope.labelNoResults = scope.optLblNoResults;
                             scope.searchInput = "";                            
                             if (scope.minlength && scope.minlength !== '') {
                               scope.minlength = parseInt(scope.minlength, 10);
